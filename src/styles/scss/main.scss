@@ -1,0 +1,86 @@
+
+@import "../css/reset.css";
+@import "mixins";
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Lexend:wght@200;400;600&family=Open+Sans:wght@300;400&family=Rubik:wght@300;500&display=swap');
+
+//font-family: 'Fira Sans Condensed', sans-serif;
+//font-family: 'Lexend', sans-serif;
+//font-family: 'Open Sans', sans-serif;
+//font-family: 'Rubik', sans-serif;
+*{
+  box-sizing: border-box;
+}
+#root{
+  min-height: 100vh;
+}
+.App{
+  min-height: 100vh ;
+}
+html, body{
+  @include mainFont;
+  background: $dark-bg;
+}
+.wrapper{
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.list{
+  @include flexElement(100%, row, none, none);
+}
+@media (min-width: 980px) {
+  .project-card{
+    @include grid(3,3%);
+  }
+}
+
+
+.projects-title{
+  @include titleFont(38px,500);
+
+  margin-bottom: 78px;
+}
+
+.projects-cards-list{
+  float: left;
+  width: 100%;
+
+  margin-bottom: 424px;
+}
+
+
+
+
+
+
+
+
+//tablet
+@media (max-width: 980px) {
+  .project-card{
+    @include grid(2,3%);
+  }
+}
+
+//mobile
+@media (max-width: 600px) {
+  .header-logo{
+    max-width: 93px;
+  }
+  .header-nav{
+    display: none;
+  }
+  .theme-switcher{
+    display: none;
+  }
+  .burger-menu{
+    display: block;
+  }
+
+
+
+
+  .project-card{
+    @include grid(1,3%);
+  }
+}

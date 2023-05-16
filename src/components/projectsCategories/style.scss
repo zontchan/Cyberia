@@ -1,0 +1,19 @@
+@import "../../styles/scss/mixins";
+@import "../../styles/scss/variables";
+
+.projects-list{
+  justify-content: space-between;
+  margin-bottom: 174px;
+}
+.project-list-item{
+  @include titleFont(20px,300);
+  @include padding(10px 29px);
+  background-color: $interact-block;
+  border-radius: 7px;
+  transition: 0.3s linear;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.project-list-item:hover{
+  background-color: $main-text;
+  color: $interact-block;
+}

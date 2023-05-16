@@ -1,0 +1,58 @@
+@import "../../styles/scss/mixins";
+@import "../../styles/scss/variables";
+
+.project-card{
+  position: relative;
+  //@include grid(3,3%);
+  overflow: hidden;
+  border-radius: 7px;
+  a{
+    @include mask(3);
+  }
+  &:hover .project-card-image{
+      transform: scale(1.1);
+  }
+}
+.project-card-image{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+  transition: 1s
+}
+.project-card-content{
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  max-width: 355px;
+  @include padding(0 31px 31px);
+}
+.project-card-title{
+  @include titleFont(28px, 500, $cards-text);
+  margin-bottom: 3px;
+
+  &:before{
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url('../../img/ico.png');
+    z-index: 2;
+    position: absolute;
+    top:-30px;
+  }
+}
+.project-card-desc{
+  @include mainFont;
+  color: $cards-text;
+  line-height: 22px;
+  //text-shadow: 1px 0 2px $border,
+  //0 1px 2px $border,
+  //-1px 0 2px $border,
+  //0 -1px 2px $border;
+}
+
+.gradient{
+  @include mask(2);
+  background: linear-gradient(to top, #090B21 0%, rgba(0,0,0,0) 60%);
+  border-radius: 7px;
+}

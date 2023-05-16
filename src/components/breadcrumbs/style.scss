@@ -1,0 +1,18 @@
+@import "../../styles/scss/mixins";
+@import "../../styles/scss/variables";
+
+ul.breadcrumbs-list li+li:before {
+  @include padding(3px);
+  color: $breadcrumbs-next;
+  content: "/";
+}
+.breadcrumbs-list{
+  @include titleFont(18px,300);
+  margin-bottom: 76px;
+}
+.breadcrumbs-list-item:not(.active){
+  color: $breadcrumbs-next;
+}
+ul.breadcrumbs-list li.active{
+  color: $breadcrumbs-main;
+}

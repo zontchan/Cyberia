@@ -1,0 +1,75 @@
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 7px;
+}
+.project-card a {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
+}
+.project-card:hover .project-card-image {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.project-card-image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 7px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.project-card-content {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  max-width: 355px;
+  padding: 0 31px 31px;
+}
+
+.project-card-title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 28px;
+  margin-bottom: 3px;
+}
+.project-card-title:before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/ico.png");
+  z-index: 2;
+  position: absolute;
+  top: -30px;
+}
+
+.project-card-desc {
+  font-family: "Open Sans", sans-serif;
+  color: #EEF3FF;
+  font-size: 14px;
+  font-weight: 400 px;
+  color: #ffffff;
+  line-height: 22px;
+}
+
+.gradient {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background: -webkit-gradient(linear, left bottom, left top, from(#090B21), color-stop(60%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(to top, #090B21 0%, rgba(0, 0, 0, 0) 60%);
+  border-radius: 7px;
+}

@@ -1,0 +1,25 @@
+.projects-list {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 174px;
+}
+
+.project-list-item {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: #EEF3FF;
+  font-size: 20px;
+  padding: 10px 29px;
+  background-color: #2B2D3A;
+  border-radius: 7px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.project-list-item:hover {
+  background-color: #EEF3FF;
+  color: #2B2D3A;
+}

@@ -1,0 +1,134 @@
+.feedback-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #252631;
+}
+
+.feedback-section-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  padding: 95px 0 176px 0;
+}
+.feedback-section-content form input, .feedback-section-content form textarea {
+  border: 1px solid #EEF3FF;
+  width: 100%;
+  padding: 17px 18px;
+  margin-bottom: 33px;
+  border-radius: 7px;
+}
+.feedback-section-content form input::-webkit-input-placeholder, .feedback-section-content form textarea::-webkit-input-placeholder {
+  color: #EEF3FF;
+}
+.feedback-section-content form input::-moz-placeholder, .feedback-section-content form textarea::-moz-placeholder {
+  color: #EEF3FF;
+}
+.feedback-section-content form input:-ms-input-placeholder, .feedback-section-content form textarea:-ms-input-placeholder {
+  color: #EEF3FF;
+}
+.feedback-section-content form input::-ms-input-placeholder, .feedback-section-content form textarea::-ms-input-placeholder {
+  color: #EEF3FF;
+}
+.feedback-section-content form input::placeholder, .feedback-section-content form textarea::placeholder {
+  color: #EEF3FF;
+}
+
+.feedback-section-info {
+  width: 36%;
+}
+.feedback-section-info h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #EEF3FF;
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+.feedback-section-info h2:before {
+  display: block;
+  content: "";
+  width: 156px;
+  height: 144px;
+  background-image: url("../../img/planet.png");
+  margin-bottom: 14px;
+}
+.feedback-section-info p {
+  font-family: "Open Sans", sans-serif;
+  color: #EEF3FF;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 22px;
+}
+
+.feedback-form {
+  width: 49%;
+}
+
+.feedback-send-button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+}
+.feedback-send-button-group button {
+  width: 43%;
+  background-color: #2D76F9;
+  padding: 20px 87px;
+  border-radius: 35px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 300px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.feedback-send-button-group button:hover {
+  background-color: #ffffff;
+  color: #2D76F9;
+}
+.feedback-send-button-group p {
+  width: 52%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  line-height: 22px;
+}

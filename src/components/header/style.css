@@ -1,0 +1,55 @@
+.header {
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 71px 10px 0 10px;
+  margin-bottom: 108px;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.header-logo {
+  max-width: 140px;
+}
+.header-logo .header-logo-pic {
+  width: 100%;
+}
+
+.nav-list-item {
+  margin-right: 100px;
+}
+.nav-list-item a {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: #EEF3FF;
+  font-size: 18px;
+}
+.nav-list-item a:hover {
+  color: #ffffff;
+}
+.nav-list-item:last-child {
+  margin-right: 0;
+}
+
+.theme-switcher {
+  cursor: pointer;
+}

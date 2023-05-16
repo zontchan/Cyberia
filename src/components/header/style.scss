@@ -1,0 +1,35 @@
+@import "../../styles/scss/mixins";
+@import "../../styles/scss/variables";
+
+.header{
+  column-gap: 20px;
+  row-gap: 10px;
+  @include flexElement(100%, row, space-between, center);
+  @include padding(71px 10px 0 10px);
+  margin-bottom: 108px;
+}
+.burger-menu{
+  display: none;
+}
+.header-logo{
+  max-width: 140px;
+  .header-logo-pic{
+    width: 100%;
+  }
+}
+.nav-list-item {
+  margin-right: 100px;
+  a{
+    @include titleFont(18px,300);
+    &:hover{
+      color: $cards-text;
+    }
+  }
+  &:last-child{
+    margin-right: 0;
+  }
+
+}
+.theme-switcher{
+  cursor: pointer;
+}

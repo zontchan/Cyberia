@@ -1,0 +1,35 @@
+@import "../../styles/scss/mixins";
+@import "../../styles/scss/variables";
+
+.footer-content{
+  @include flexElement(100%, row, space-between, none);
+  @include padding(130px 0 171px 0);
+  .logo{
+    width: 17%;
+    p{
+      @include footerFont;
+    }
+  }
+  .footer-nav{
+    @include footerFont;
+    @include flexElement(36%, row, space-between, center);
+    .footer-nav-list{
+      column-count: 2;
+      a{
+        color: $main-text;
+      }
+      li{
+        &:nth-child(-n+3){
+          margin-right: 55px;
+        }
+      }
+    }
+    li{
+      margin-bottom: 20px;
+    }
+  }
+  .copyright{
+    width: 25%;
+    @include footerFont;
+  }
+}

@@ -1,0 +1,69 @@
+@import "../../styles/scss/mixins";
+@import "../../styles/scss/variables";
+
+.feedback-section{
+  @include flexElement(100%, row, center, center);
+  background-color: $feedback-block;
+}
+.feedback-section-content{
+  @include flexElement(100%, row, space-between, none);
+  @include padding(95px 0 176px 0);
+  form{
+    input, textarea{
+      border: 1px solid $main-text;
+      width: 100%;
+      @include padding(17px 18px);
+      margin-bottom: 33px;
+      border-radius: 7px;
+      &::placeholder{
+        color: $main-text;
+      }
+    }
+  }
+}
+.feedback-section-info{
+  width: 36%;
+
+  h2{
+    @include titleFont(38px,500);
+    margin-bottom: 40px;
+    &:before{
+      display: block;
+      content: '';
+      width: 156px;
+      height: 144px;
+      background-image: url('../../img/planet.png');
+      margin-bottom: 14px;
+    }
+  }
+  p{
+    @include mainFont;
+    line-height: 22px;
+  }
+}
+.feedback-form{
+  width: 49%;
+}
+
+.feedback-send-button-group{
+  @include flexElement(100%, row, space-between, none);
+  button{
+    width: 43%;
+    background-color: $button;
+    @include padding(20px 87px);
+    border-radius: 35px;
+    text-transform: uppercase;
+    @include mainFont($color:$cards-text, $fontSize: 13px, $fontWeight: 300px);
+    transition: 0.3s linear;
+
+    &:hover{
+      background-color: $cards-text;
+      color: $button;
+    }
+  }
+  p{
+    width: 52%;
+    align-self: center;
+    line-height: 22px;
+  }
+}

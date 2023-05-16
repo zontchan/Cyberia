@@ -1,0 +1,67 @@
+@import "variables";
+@mixin mainFont($line-height:22px, $color:$main-text, $fontSize:14px,$fontWeight:400px){
+  font-family: 'Open Sans', sans-serif;
+  color: $color;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}
+@mixin footerFont{
+  font-family: 'Open Sans', sans-serif;
+  color: $main-text;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.07px;
+}
+@mixin titleFont($fontSize,$fontWeight, $fontColor:$main-text, ){
+  font-family: 'Rubik', sans-serif;
+  font-weight: $fontWeight;
+  color:$fontColor;
+  font-size: $fontSize;
+}
+@mixin padding($padd...){
+  padding: $padd;
+}
+@mixin mask($zIndex){
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: $zIndex;
+}
+
+@mixin grid($cols, $marg){
+  float: left;
+  margin-right: $marg;
+  margin-bottom: $marg;
+
+  @if($cols >= 5){
+    width: 100%;
+  }
+  @else {
+    width: ((100%-(($cols - 1)*$marg))/$cols);
+  }
+
+  &:nth-child(#{$cols}n){
+    margin-right: 0;
+  }
+}
+
+@mixin bigBlock{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@mixin flexElement($width,$direction, $justifyContent, $align){
+  display: flex;
+  flex-wrap: wrap;
+  width: $width;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $align;
+}

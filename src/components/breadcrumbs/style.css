@@ -1,0 +1,21 @@
+ul.breadcrumbs-list li + li:before {
+  padding: 3px;
+  color: #C4D2E3;
+  content: "/";
+}
+
+.breadcrumbs-list {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: #EEF3FF;
+  font-size: 18px;
+  margin-bottom: 76px;
+}
+
+.breadcrumbs-list-item:not(.active) {
+  color: #C4D2E3;
+}
+
+ul.breadcrumbs-list li.active {
+  color: #616580;
+}
